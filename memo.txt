@@ -1,0 +1,21 @@
+jestのインストール
+npm install jest --global
+
+p696のgetJSON.jsは自前でファイルを用意しておく
+```
+module.exports = () => 'getJSON';
+```
+
+構文
+```
+const 定数名 = require("テスト対象ファイル");
+describe("テスト対象メソッド()", () => {
+  test("テストのタイトル", async () => {
+    expect(await テスト対象メソッド()).toBe(期待される値)
+  });
+});
+```
+
+ES2021/ES2022も出ている
+
+「継承よりも合成を優先」というのが最近の原則
